@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวละคร ROV</title>
+        
+        <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            font-family: "Prompt", serif;
+            margin: 0;
+            padding: 0;
+            background: url('halloween-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+        }
+
+        header {
+            
+            background: rgba(76, 175, 80, 0.8);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .search-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .search-container input {
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(76, 175, 80, 0.9);
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 25%;
+            border-radius: 10px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .signature {
+            margin-top: 15px;
+            font-style: italic;
+            color: #888;
+            text-align: center;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>แนะนำตัวละคร ROV</h1>
+    </header>
+
+    <div class="profile-container" onclick="location.href='about.html'">
+        <h3>ข้อมูลผู้ทำ</h3>
+        <p>นาย พิษณุ โค้นลิ้น</p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="ค้นหาตัวละคร..." onkeyup="searchCharacters()">
+    </div>
+
+    <div id="characters">
+        <!-- ตัวละคร ROV -->
+        <div class="container">
+            <h2>ตัวละคร: Krixi</h2>
+            <a href="krixi-details.html">
+                <img src="คิกซี่.jfif" alt="Krixi" />
+            </a>
+            <p><strong>ประเภท:</strong> เมจ (Mage)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“เวทมนตร์แห่งการควบคุม สร้างสรรค์จากใจที่มีพลัง”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Yue</h2>
+            <a href="yue-details.html">
+                <img src="ยุ้ย.jfif" alt="Yue" />
+            </a>
+            <p><strong>ประเภท:</strong> เมจ (Mage)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“พลังแห่งดวงจันทร์ ส่องสว่างในความมืด”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Tulen</h2>
+            <a href="tulen-details.html">
+                <img src="ทูเลน.jfif" alt="Tulen" />
+            </a>
+            <p><strong>ประเภท:</strong> เมจ (Mage)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“พลังแห่งฟ้า ส่องสว่างในความมืด”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Iggy</h2>
+            <a href="iggy-details.html">
+                <img src="อิกกี้.jfif" alt="Iggy" />
+            </a>
+            <p><strong>ประเภท:</strong> เมจ (Mage)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“พลังแห่งเปลวไฟ ปกป้องโลกของเรา”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Ignis</h2>
+            <a href="ignis-details.html">
+                <img src="อิงนิส.jfif" alt="Ignis" />
+            </a>
+            <p><strong>ประเภท:</strong> เมจ (Mage)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“พลังแห่งไฟ แผดเผาทุกสิ่งที่ขวางหน้า”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Liliana</h2>
+            <a href="liliana-details.html">
+                <img src="ลิเลียน่า.jfif" alt="Liliana" />
+            </a>
+            <p><strong>ประเภท:</strong> เมจ (Mage)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“พลังแห่งความมืด ส่องสว่างในคืนมืด”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Maganga</h2>
+            <a href="maganga-details.html">
+                <img src="มาเเกงก้า.jfif" alt="Maganga" />
+            </a>
+            <p><strong>ประเภท:</strong> เมจ (Mage)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“พลังแห่งธรรมชาติ สร้างความสมดุลให้กับโลก”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Murad</h2>
+            <a href="murad-details.html">
+                <img src="มูราด.jfif" alt="Murad" />
+            </a>
+            <p><strong>ประเภท:</strong> นักรบ (Warrior)</p>
+            <p><strong>บทบาท:</strong> สังหาร (Assassin)</p>
+            <p class="signature">“เวลาเป็นอาวุธ สังหารศัตรูในชั่วพริบตา”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Zill</h2>
+            <a href="zill-details.html">
+                <img src="zill.jfif" alt="Zill" />
+            </a>
+            <p><strong>ประเภท:</strong> เมจ (Mage)</p>
+            <p><strong>บทบาท:</strong> สังหาร (Assassin)</p>
+            <p class="signature">“พลังแห่งความสนุกสนาน สร้างความเสียหายอย่างมาก”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Nakroth</h2>
+            <a href="nakroth-details.html">
+                <img src="นาคอส.jfif" alt="Nakroth" />
+            </a>
+            <p><strong>ประเภท:</strong> นักรบ (Warrior)</p>
+            <p><strong>บทบาท:</strong> สังหาร (Assassin)</p>
+            <p class="signature">“ใครก็ตามที่ขวางทางจะต้องได้รับบทเรียน”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Thane</h2>
+            <a href="thane-details.html">
+                <img src="เทรน.jfif" alt="Thane" />
+            </a>
+            <p><strong>ประเภท:</strong> นักรบ (Warrior)</p>
+            <p><strong>บทบาท:</strong> สังหาร (Assassin)</p>
+            <p class="signature">“ให้ข้าเป็นดาบที่ฟันศัตรู!”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Rourke</h2>
+            <a href="rourke-details.html">
+                <img src="rourke.jfif" alt="Rourke" />
+            </a>
+            <p><strong>ประเภท:</strong> นักรบ (Warrior)</p>
+            <p><strong>บทบาท:</strong> ถึก (Tank)</p>
+            <p class="signature">“กองทัพคือบ้านของข้า”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Zephys</h2>
+            <a href="zephys-details.html">
+                <img src="zephys.jfif" alt="Zephys" />
+            </a>
+            <p><strong>ประเภท:</strong> นักรบ (Warrior)</p>
+            <p><strong>บทบาท:</strong> การโจมตี (Assassin)</p>
+            <p class="signature">“ข้าจะยกหอกและปกป้องผู้ที่รัก”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Valhein</h2>
+            <a href="valhein-details.html">
+                <img src="valhein.jfif" alt="Valhein" />
+            </a>
+            <p><strong>ประเภท:</strong> นักธนู (Marksman)</p>
+            <p><strong>บทบาท:</strong> สังหาร (Assassin)</p>
+            <p class="signature">“เป้าหมายอยู่ในสายตา ข้าจะไม่พลาด!”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Alice</h2>
+            <a href="alice-details.html">
+                <img src="alice.jfif" alt="Alice" />
+            </a>
+            <p><strong>ประเภท:</strong> ซัพพอร์ต (Support)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“ความรักคือสิ่งที่ยิ่งใหญ่ที่สุดในโลก”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Omen</h2>
+            <a href="omen-details.html">
+                <img src="omen.jfif" alt="Omen" />
+            </a>
+            <p><strong>ประเภท:</strong> นักรบ (Warrior)</p>
+            <p><strong>บทบาท:</strong> สังหาร (Assassin)</p>
+            <p class="signature">“ความมืดจะเป็นเพื่อนข้าตลอดไป”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Grakk</h2>
+            <a href="grakk-details.html">
+                <img src="grakk.jfif" alt="Grakk" />
+            </a>
+            <p><strong>ประเภท:</strong> ซัพพอร์ต (Support)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“ข้าไม่ใช่แค่คนธรรมดา”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Arum</h2>
+            <a href="arum-details.html">
+                <img src="arum.jfif" alt="Arum" />
+            </a>
+            <p><strong>ประเภท:</strong> ซัพพอร์ต (Support)</p>
+            <p><strong>บทบาท:</strong> การฟื้นฟู (Healing)</p>
+            <p class="signature">“การดูแลเป็นสิ่งสำคัญ”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Zuka</h2>
+            <a href="zuka-details.html">
+                <img src="zUka.jfif" alt="Zuka" />
+            </a>
+            <p><strong>ประเภท:</strong> นักรบ (Warrior)</p>
+            <p><strong>บทบาท:</strong> สังหาร (Assassin)</p>
+            <p class="signature">“พลังของข้าจะทำให้ท่านสะเทือน”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Fennik</h2>
+            <a href="fennik-details.html">
+                <img src="Fennik.jfif" alt="Fennik" />
+            </a>
+            <p><strong>ประเภท:</strong> นักธนู (Marksman)</p>
+            <p><strong>บทบาท:</strong> สังหาร (Assassin)</p>
+            <p class="signature">“ความเร็วคือความตาย”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Florentino</h2>
+            <a href="florentino-details.html">
+                <img src="ฟลอเรน.jfif" alt="Florentino" />
+            </a>
+            <p><strong>ประเภท:</strong> นักธนู (Marksman)</p>
+            <p><strong>บทบาท:</strong> การควบคุม (Control)</p>
+            <p class="signature">“ความงามคือพลัง”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Diao Chan</h2>
+            <a href="diaochan-details.html">
+                <img src="Diao Chan.jfif" alt="Diao Chan" />
+            </a>
+            <p><strong>ประเภท:</strong> เมจ (Mage)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“ความงามของข้าจะทำให้ท่านหลงใหล”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Arduin</h2>
+            <a href="arduin-details.html">
+                <img src="Arduin.jfif" alt="Arduin" />
+            </a>
+            <p><strong>ประเภท:</strong> นักรบ (Warrior)</p>
+            <p><strong>บทบาท:</strong> ถึก (Tank)</p>
+            <p class="signature">“ข้าจะปกป้องผู้ที่ข้ารักด้วยชีวิต”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Gildur</h2>
+            <a href="gildur-details.html">
+                <img src="Gildur.jfif" alt="Gildur" />
+            </a>
+            <p><strong>ประเภท:</strong> นักรบ (Warrior)</p>
+            <p><strong>บทบาท:</strong> สังหาร (Assassin)</p>
+            <p class="signature">“ข้าจะไม่หยุดจนกว่าจะบรรลุเป้าหมาย”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Maloch</h2>
+            <a href="maloch-details.html">
+                <img src="Maloch.jfif" alt="Maloch" />
+            </a>
+            <p><strong>ประเภท:</strong> นักรบ (Warrior)</p>
+            <p><strong>บทบาท:</strong> ถึก (Tank)</p>
+            <p class="signature">“ความแข็งแกร่งคือสิ่งที่สำคัญที่สุด”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Lumburr</h2>
+            <a href="lumburr-details.html">
+                <img src="Lumburr.jfif" alt="Lumburr" />
+            </a>
+            <p><strong>ประเภท:</strong> ถึก (Tank)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“ให้ข้าดูแลพวกเจ้าเอง”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Aoi</h2>
+            <a href="aoi-details.html">
+                <img src="Aoi.jfif" alt="Aoi" />
+            </a>
+            <p><strong>ประเภท:</strong> เมจ (Mage)</p>
+            <p><strong>บทบาท:</strong> ควบคุมพื้นที่ (Area Control)</p>
+            <p class="signature">“ความสวยงามของโลกสามารถซ่อนความลับได้”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Yena</h2>
+            <a href="yena-details.html">
+                <img src="Yena.jfif" alt="Yena" />
+            </a>
+            <p><strong>ประเภท:</strong> นักรบ (Warrior)</p>
+            <p><strong>บทบาท:</strong> การโจมตี (Assassin)</p>
+            <p class="signature">“ข้าจะต้องเป็นผู้ชนะ!”</p>
+        </div>
+
+        <div class="container">
+            <h2>ตัวละคร: Quillen</h2>
+            <a href="quillen-details.html">
+                <img src="Quillen.jfif" alt="Quillen" />
+            </a>
+            <p><strong>ประเภท:</strong> สังหาร (Assassin)</p>
+            <p><strong>บทบาท:</strong> สังหาร (Assassin)</p>
+            <p class="signature">“การเคลื่อนไหวที่เฉียบคมคือเสน่ห์ของข้า”</p>
+        </div>
+
+    </div>
+
+    <script>
+        function searchCharacters() {
+            const input = document.getElementById('search');
+            const filter = input.value.toLowerCase();
+            const characters = document.getElementById('characters');
+            const containers = characters.getElementsByClassName('container');
+
+            for (let i = 0; i < containers.length; i++) {
+                const h2 = containers[i].getElementsByTagName('h2')[0];
+                if (h2.innerText.toLowerCase().indexOf(filter) > -1) {
+                    containers[i].style.display = '';
+                } else {
+                    containers[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
